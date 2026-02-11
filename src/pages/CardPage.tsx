@@ -74,8 +74,8 @@ const CardPage = () => {
     '/valentines-day-page/videos/4.mp4',
     '/valentines-day-page/videos/5.mp4',
     '/valentines-day-page/videos/6.mp4',
-    '/valentines-day-page/videos/7.mp4',
-    '/valentines-day-page/videos/8.mp4',
+    '/valentines-day-page/videos/1.mp4',
+    '/valentines-day-page/videos/2.mp4',
   ]
 
   useEffect(() => {
