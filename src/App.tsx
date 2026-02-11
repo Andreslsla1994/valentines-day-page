@@ -2,7 +2,6 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import CardPage from './pages/CardPage'
 import { useEffect, useRef } from 'react';
-import backgroundMusic from '/valentines-day-page/audio.mp3';
 
 function App() {
   const location = useLocation()
@@ -10,7 +9,7 @@ function App() {
   const startedRef = useRef(false)
 
   useEffect(() => {
-    audioRef.current = new Audio(backgroundMusic)
+    audioRef.current = new Audio("/valentines-day-page/audio.mp3")
     audioRef.current.volume = 0.5
     audioRef.current.loop = true
 
