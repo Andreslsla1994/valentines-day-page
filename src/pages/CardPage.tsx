@@ -272,6 +272,8 @@ const CardPage = () => {
             sx={{
               perspective: '1000px',
               cursor: 'pointer',
+              backgroundColor: "#810425",
+              borderRadius: 16,
             }}
             onClick={handleCardClick}
           >
@@ -326,6 +328,7 @@ const CardPage = () => {
                       p: 4,
                       transform: 'rotateY(180deg)',
                       backfaceVisibility: 'hidden',
+                      backgroundColor: "#810425 !important",
                     }}
                   >
                     {

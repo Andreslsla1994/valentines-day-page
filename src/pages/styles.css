@@ -1,3 +1,29 @@
+/* Force consistent colors on mobile (prevent OS/browser from shifting colors) */
+html {
+  color-scheme: light;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+body {
+  background-color: #fff5f8 !important;
+  color: #333;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  background-color: #fff5f8;
+}
+
 .main-card {
-    background-color: #fa7b9b !important;
+  background-color: #810425 !important;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+@supports (padding: env(safe-area-inset-top)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
 }
